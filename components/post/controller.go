@@ -26,4 +26,3 @@ func (d *Dependency) GetId(ctx echo.Context) error {
 	return ctx.JSON(200,rows)
 }
 
-
