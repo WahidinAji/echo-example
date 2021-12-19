@@ -15,5 +15,9 @@ DROP Table posts;
 insert into posts(title,`desc`)
 values ('Post One','desc post one'), ('Post Two','desc post two'), ('post Three','desc post Three');
 
-delete from posts;
+update posts
+set title='Post One Update'
+where id=1;
+
 truncate posts;
+delete from posts;
