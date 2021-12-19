@@ -2,8 +2,9 @@
 
 - notes
 ```text
-you can add password key-value in .env file and don't forget to import that
-into database/database.go 
+->  You can add password key-value in .env file and don't forget to import that
+    into database/database.go
+->  Don't forget to copy .env.example to .env
 ```
 - example
 ```dotenv
