@@ -1,5 +1,23 @@
 # Simple Echo With Mysql
 
+- notes
+```text
+you can add password key-value in .env file and don't forget to import that
+into database/database.go 
+```
+- example
+```dotenv
+DB_PASS=yourpassword
+```
+```go
+dbPass := os.Getenv("DB_PASS")
+if dbPass == "" {
+	log.Fatal("DB_PASS ENVIRONMENT CANNOT BE NULL")
+}
+// change dsn line,
+dsn := fmt.Sprintf("%s:%s@/%s?parseTime=true",user,dbPass,dbName)
+```
+
 ## Posts
 `post.go`
 ```text
